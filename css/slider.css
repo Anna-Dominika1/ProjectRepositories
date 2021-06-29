@@ -1,0 +1,272 @@
+img {
+    width: 100%; 
+  }
+  
+  .sim-slider {
+    max-width: 800px;
+    min-width: 320px;
+    margin: 228px auto;
+    padding: 30px 50px;
+    border: 1px solid #ccd;
+    background-color: #ffffff73;
+  }
+  
+  /* General styles */
+  .sim-slider {
+    position: relative;
+  }
+  
+  .sim-slider-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+  }
+  
+  .sim-slider-element {
+    width: 100%;
+    transition: opacity 1s ease-in;
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    display: block;
+  }
+  
+  /* Navigation item styles */
+  div.sim-slider-arrow-left,
+  div.sim-slider-arrow-right {
+    width: 22px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.6;
+    z-index: 4;
+  }
+  
+  div.sim-slider-arrow-left {
+    left: 10px;
+    top: 46%;
+    display: block;
+    background: url("http://pvbk.spb.ru/inc/slider/sim-files/sim-arrow-left.png") no-repeat;
+  }
+  
+  div.sim-slider-arrow-right {
+    right: 10px;
+    top: 46%;
+    display: block;
+    background: url("http://pvbk.spb.ru/inc/slider/sim-files/sim-arrow-right.png") no-repeat;
+  }
+  
+  div.sim-slider-arrow-left:hover {
+    opacity: 1.0;
+  }
+  
+  div.sim-slider-arrow-right:hover {
+    opacity: 1.0;
+  }
+  
+  div.sim-slider-dots {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+    text-align: center;
+  }
+  
+  span.sim-dot {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    padding: 0;
+    display: inline-block;
+    background-color: #BBB;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .container {
+    width: 50%;
+  }
+  
+
+  .container img {
+    width: 100%;
+    height: auto;
+  }
+
+  .container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .container .btn:hover {
+    background-color: black;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out;
+}
+
+
+.div_wrapper_joystick{
+    margin-left: 350px;
+    /* margin-bottom: 300px; */
+}
+.joystick {
+    transition: all 1s;
+    transform-origin: 50% 100%;
+    height: 460px;
+    width: auto;
+    margin-top: -42px;
+}
+.joystick--up {
+     transform: rotateX(40deg) rotateZ(10deg) translateZ(20px); 
+}
+
+ .joystick--left {
+    transform: skew(0.06turn, -18deg);
+}
+
+.joystick--down {
+    transform: rotateX(-20deg) translateZ(50px) translateZ(-20px); 
+}
+
+.joystick--right {
+    transform: skew(-0.06turn, 18deg);
+}
+.modal {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 24px;
+  max-width: 640px;
+  width: 100%;
+  min-height: 200px;
+
+  transform: scale(1.1);
+  transition: transform 200ms ease-in-out;
+}
+
+.modal__title {
+  margin-bottom: 12px;
+}
+
+.modal__text {
+  margin-bottom: 24px;
+}
+
+.show_modal {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+}
+
+.show_modal .modal {
+  transform: scale(1);
+}
+
+  .button {
+    cursor: pointer;
+  }
+  
+  .backdrop {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out;
+  }
+  
+  @import url("./slider.css");
+@import url("./reset.css");
+
+body {
+    background-image: url(/img/backgroung.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    margin-top: 75px;
+}
+  .modal {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 24px;
+    max-width: 640px;
+    width: 100%;
+    min-height: 200px;
+  
+    transform: scale(1.1);
+    transition: transform 200ms ease-in-out;
+  }
+  
+  .modal__title {
+    margin-bottom: 12px;
+  }
+  
+  .modal__text {
+    margin-bottom: 24px;
+  }
+  
+  .show_modal {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+  }
+  
+  .show_modal .modal {
+    transform: scale(1);
+  }
+  

@@ -1,0 +1,14 @@
+.btn{
+    width:250px;
+    height: 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 15px;
+    justify-content: center;
+}
+
+.start_game{
+  text-align: center;
+  margin-top: 450px;
+}
